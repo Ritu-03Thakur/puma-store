@@ -1,29 +1,20 @@
-
-
-
-
-
-
-
 .navbar {
   display: flex;
-  
+
   position: -webkit-sticky;
   position: sticky;
   padding: 20px;
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: rgba(255 ,255,255, 0.45);
+  background-color: rgba(255, 255, 255, 0.45);
   border-radius: 5px;
-  box-shadow:  0px -3px 6px rgba(0 , 0 ,0 , 0.25) ;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4.5px);
-  
 
-  border: 1px solid rgba(255 ,255,255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   top: 0;
 
-  
   .img img {
     height: 30px;
     width: 30px;
@@ -32,126 +23,112 @@
     display: flex;
     gap: 15px;
 
-    .cart{
+    .cart {
       display: flex;
       position: relative;
-    
-      span{
-       padding: 3px;
-    border-radius: 23px;
-    top: -9px;
-    left: 18px;
-    background-color: #adc178;
-    position: absolute;
-    z-index: 100;
+
+      span {
+        padding: 3px;
+        border-radius: 23px;
+        top: -9px;
+        left: 18px;
+        background-color: #adc178;
+        position: absolute;
+        z-index: 100;
       }
     }
   }
 }
 
-
-
-
-
-
 // Sales
-.popularSales{
+.popularSales {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  .sales {
+  .popularSales-cards {
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(105, 100, 24);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 
-  .popular-card {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    
-    .popular-card-content {
+    .sales {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      
-      .popular-price {
+      width: 400px;
+      justify-content: center;
+      box-shadow: 2px 2px 4px #9d7fc5;
+      align-items: center;
+      background-color: #b795e5;
+      padding: 20px;
+      border-radius: 6px;
+      .popular-card {
         display: flex;
-        gap: 20px;
-        justify-content: center;
-        align-content: center;
-        
-        button {
-          padding: 5px;
-          border: none;
-          background-color: rgb(187, 143, 90);
-          border-radius: 6px;
-          box-shadow: 2px 2px 2px 1px;
-        }
-        
-        span {
+        justify-content: space-between;
+        padding: 10px;
+
+        .popular-card-content {
           display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 7px;
+          flex-direction: column;
+          gap: 10px;
+
+          .popular-price {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-content: center;
+
+            span {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 7px;
+            }
+          }
+
+          .popular-buy {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+          }
         }
       }
-
-      .popular-buy{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        
-        button{
-      padding: 7px;
-      border: none;
-      background-color: rgb(187, 143, 90);
-      border-radius: 6px;
-      box-shadow: 2px 2px 2px 1px;
     }
   }
-  
-  
 }
-}
-}
-
-}
-
-
 
 // Top - Rated Sales
 
-.toprated{
-   
+.toprated {
   display: flex;
   flex-direction: column;
   gap: 20px;
-    .card{
-
-
+  .toprated-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    .card {
       display: flex;
       flex-direction: column;
+      width: 400px;
       justify-content: center;
+      box-shadow: 2px 2px 4px #9d7fc5;
       align-items: center;
-      background-color: rgb(105, 100, 24);
-      .card-content{
-        .card-price{
+      background-color: #b795e5;
+      padding: 20px;
+      border-radius: 6px;
+      .card-content {
+        .card-price {
           display: flex;
           gap: 20px;
           justify-content: center;
           align-content: center;
-          
-          button {
-            padding: 5px;
-            border: none;
-            background-color: rgb(187, 143, 90);
-            border-radius: 6px;
-            box-shadow: 2px 2px 2px 1px;
-          }
-          
+
+         
+
           span {
             display: flex;
             align-items: center;
@@ -159,66 +136,38 @@
             gap: 7px;
           }
         }
-        .card-buy{
+        .card-buy {
           display: flex;
           justify-content: center;
           align-items: center;
           gap: 5px;
-          
-          button{
-        padding: 7px;
-        border: none;
-        background-color: rgb(187, 143, 90);
-        border-radius: 6px;
-        box-shadow: 2px 2px 2px 1px;
-      }
-    }
-      }
 
-
-
-      .card-img{
-
-        img{
-
-          height: 70px;
-          width: 65px;
+         
         }
       }
     }
-}
 
+    .card-img {
+      img {
+        height: 70px;
+        width: 65px;
+      }
+    }
+  }
+}
 
 // Explore
 
-.explore{
+.explore {
   display: flex;
   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 25px;
-  button{
-    padding: 7px;
-    border: none;
-    background-color: rgb(187, 143, 90);
-    border-radius: 6px;
-    box-shadow: 2px 2px 2px 1px;
-  }
-  img{
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  img {
     background: blueviolet;
     height: 100px;
     width: 80px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-

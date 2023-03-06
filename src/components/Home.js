@@ -25,8 +25,8 @@ const Home = () => {
       head = "HIGHLIGHTS" 
       choice = "PUMA AIR WITH LIMITLESS CHOICES"
       desc = "asfkjdasfkjd"
-      link = ""
-      img = "logo.png"
+      link = "https://in.puma.com"
+      img="./assert/shoe1.jpeg"
       
       />
       <TopRated />
@@ -34,8 +34,8 @@ const Home = () => {
       head = "HIGHLIGHTS" 
       choice = "PUMA AIR WITH LIMITLESS CHOICES"
       desc = "asfkjdasfkjd"
-      link = ""
-      img = "logo.png"
+      link = "https://in.puma.com"
+      img="./assert/shoe1.jpeg"
       />
 
     </div>

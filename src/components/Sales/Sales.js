@@ -1,6 +1,7 @@
 import React from "react";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import StarIcon from "@mui/icons-material/Star";
+import { Link } from "react-router-dom";
 
 const Sales = (props) => {
   return (
@@ -17,7 +18,9 @@ const Sales = (props) => {
           </div>
           <div className="popular-buy">
             <LocalMallIcon sx={{ boxShadow: "1px 1px 2px 1px" }} />
+            <Link to= "/cartPage">
             <button>Buy Now</button>
+            </Link>
           </div>
         </div>
         <div className="shoe-img">
