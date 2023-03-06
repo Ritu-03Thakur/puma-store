@@ -1,19 +1,27 @@
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import LocalMallIcon from "@mui/icons-material/LocalMall" ; 
+
 
 
 const Navbar = () => {
+
   return (
     <div className='navbar'>
-      <div className="img">
-        <img src="" alt="" />
+      <div className="img" >
+        <img src="logo.png" alt=""  />
       </div>
       <div className="icons">
+        
      <SearchIcon />
      <FavoriteBorderIcon />
-     <ShoppingCartIcon />
+     <div className="cart">
+      
+     <LocalMallIcon  />
+     
+     <span>0</span>
+     </div>
     
       </div>
     </div>
