@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import DeleteIcon from "@mui/icons-material/Delete";
 import CloseIcon from "@mui/icons-material/Close";
 import "./CartPage.scss" ; 
 import { Link } from "react-router-dom";
 
 const CartPage = () => {
+  const [count , setCount] = useState(1) ; 
+
+  const handleCount = () =>{
+    if(count <= 1 ){
+      setCount(count);
+    }
+    else{
+
+      setCount(count-1) ; 
+    }
+  }
   return (
     <div className="cart-page">
         <div className="cart-heading">
       <h1>Your Cart</h1>
       <Link to= "/">
-      < CloseIcon />
+      < CloseIcon  sx={{color: "#696418"}}/>
       </Link>
 
 
@@ -25,9 +36,9 @@ const CartPage = () => {
           <span>Running Shoes</span>
 
           <div className="item-button">
-            <button> - </button>
-            <button> 1 </button>
-            <button> + </button>
+            <button onClick={handleCount} > - </button>
+            <button> {count} </button>
+            <button onClick={() =>{ setCount(count + 1)  }} > + </button>
           </div>
         </div>
 

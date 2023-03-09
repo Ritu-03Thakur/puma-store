@@ -30,9 +30,10 @@
       span {
         padding: 3px;
         border-radius: 23px;
+        color: #696418 ; 
         top: -9px;
         left: 18px;
-        background-color: #adc178;
+        // background-color: #adc178;
         position: absolute;
         z-index: 100;
       }
@@ -46,6 +47,7 @@
   flex-direction: column;
   gap: 20px;
   .popularSales-cards {
+     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,9 +59,9 @@
       flex-direction: column;
       width: 400px;
       justify-content: center;
-      box-shadow: 2px 2px 4px #9d7fc5;
+      box-shadow: 2px 2px 4px #97978c;
       align-items: center;
-      background-color: #b795e5;
+      background-color: #94947f;
       padding: 20px;
       border-radius: 6px;
       .popular-card {
@@ -115,9 +117,9 @@
       flex-direction: column;
       width: 400px;
       justify-content: center;
-      box-shadow: 2px 2px 4px #9d7fc5;
+      box-shadow: 2px 2px 4px #94947f;
       align-items: center;
-      background-color: #b795e5;
+      background-color: #94947f;
       padding: 20px;
       border-radius: 6px;
       .card-content {

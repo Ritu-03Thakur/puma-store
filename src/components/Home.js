@@ -4,21 +4,15 @@ import PopularSales from './PopularSales/PopularSales';
 import TopRated from './TopRated/TopRated';
 import Explore from './Explore/Explore';
 
-
 import "./Home.scss" ; 
 
 
 const Home = () => {
 
-  
-  
-
 
   return (
     <div className='home'>
-      <Navbar 
-      
-       />
+      <Navbar   />
       <PopularSales   />
       < Explore 
       
@@ -37,7 +31,7 @@ const Home = () => {
       link = "https://in.puma.com"
       img="./assert/shoe1.jpeg"
       />
-
+      
     </div>
   )
 }

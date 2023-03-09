@@ -10,16 +10,16 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="img" >
-        <img src="./assert/shoe1.jpeg" alt=""   />
+        <img src="./assert/logo.png" alt=""   />
       </div>
       <div className="icons">
         
-     <SearchIcon />
-     <FavoriteBorderIcon />
+     <SearchIcon  sx={{color: "#696418"}}/>
+     <FavoriteBorderIcon  sx={{color: "#696418"}}/>
      <Link to="/cartPage">
      <div className="cart">
        
-     <LocalMallIcon  />
+     <LocalMallIcon   sx={{color: "#696418"}}/>
      
      <span>0</span>
      </div>
