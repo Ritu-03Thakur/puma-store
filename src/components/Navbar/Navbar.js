@@ -14,12 +14,12 @@ const Navbar = () => {
       </div>
       <div className="icons">
         
-     <SearchIcon  sx={{color: "#696418"}}/>
-     <FavoriteBorderIcon  sx={{color: "#696418"}}/>
+     <SearchIcon  sx={{color: "#113f3a"}}/>
+     <FavoriteBorderIcon  sx={{color: "#113f3a"}}/>
      <Link to="/cartPage">
      <div className="cart">
        
-     <LocalMallIcon   sx={{color: "#696418"}}/>
+     <LocalMallIcon   sx={{color: "#113f3a"}}/>
      
      <span>0</span>
      </div>

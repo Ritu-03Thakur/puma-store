@@ -10,24 +10,24 @@ const PopularSales = () => {
           heading="Puma"
           shoeType="Walking Shoe"
           price="200"
-          rating="5 +"
-          img="./assert/shoe1.jpeg"
+          rating="4.5"
+          img="./assert/shoe1b.png"
         />
 
         <Sales
           heading="Puma"
           shoeType="Walking Shoe"
           price="200"
-          rating="5 +"
-          img="./assert/shoe1.jpeg"
-        />
+          rating="4.5"
+          img="./assert/shoe2b.png"
+        />+
 
         <Sales
           heading="Puma"
           shoeType="Walking Shoe"
           price="200"
-          rating="5 +"
-          img="./assert/shoe1.jpeg"
+          rating="4.5"
+          img="./assert/shoe3b.png"
         />
       </div>
     </div>

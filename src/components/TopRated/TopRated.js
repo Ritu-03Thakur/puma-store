@@ -12,7 +12,7 @@ const TopRated = () => {
           shoeType="Walking Shoe"
           price="200"
           rating="5 "
-          img="./assert/shoe1.jpeg"
+          img="./assert/shoe1b.png"
         />
 
         <Card
@@ -20,7 +20,7 @@ const TopRated = () => {
           shoeType="Walking Shoe"
           price="200"
           rating="5 "
-          img="./assert/shoe1.jpeg"
+          img="./assert/shoe2b.png"
         />
 
         <Card
@@ -28,7 +28,7 @@ const TopRated = () => {
           shoeType="Walking Shoe"
           price="200"
           rating="5 "
-          img="./assert/shoe1.jpeg"
+          img="./assert/shoe3b.png"
         />
       </div>
     </div>

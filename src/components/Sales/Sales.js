@@ -1,6 +1,7 @@
 import React from "react";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import StarIcon from "@mui/icons-material/Star";
+import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 
 const Sales = (props) => {
@@ -8,23 +9,24 @@ const Sales = (props) => {
     <div className="sales">
       <div className="popular-card">
         <div className="popular-card-content">
-          <h3>{props.heading} </h3>
-          <h5>{props.shoeType}</h5>
+          <h2>{props.heading} </h2>
+          <h4>{props.shoeType}</h4>
           <div className="popular-price">
-            <button>${props.price}</button>
+          <Button className="info" size="small" variant="contained"  style={{backgroundColor : "#113f3a" }}  >${props.price}</Button>
+          
             <span>
               <StarIcon /> {props.rating}
             </span>
           </div>
           <div className="popular-buy">
-            <LocalMallIcon sx={{ boxShadow: "1px 1px 2px 1px" }} />
+            <LocalMallIcon  sx={{ color : "#113f3a"}} style = {{boxShadow : "2px 2px 7px rgb(22 82 76)"}}/>
             <Link to= "/cartPage">
-            <button>Buy Now</button>
+            <Button className="info" size="small" variant="contained"  style={{backgroundColor : "#113f3a" }}  >Buy Now</Button>
             </Link>
           </div>
         </div>
         <div className="shoe-img">
-          <img src= {props.img} alt="" height={100} width={70} />
+          <img src= {props.img} alt=""  />
         </div>
       </div>
     </div>
