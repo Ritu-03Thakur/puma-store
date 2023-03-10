@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '@mui/material/Button';
 
 const Explore = (props) => {
   return (
@@ -7,7 +8,8 @@ const Explore = (props) => {
       <h3>{props.choice}</h3>
    <p>{props.desc}</p>
    <a href={props.link}>
-   <button>Explore More</button>
+   <Button className="info" size="small" variant="contained"  style={{backgroundColor : "#113f3a"  }}  >Explore More</Button>
+   
    </a>
 
     <img src= {props.img} alt="" />
