@@ -172,11 +172,20 @@
           overflow: hidden;
           position: relative;
           
+          &:hover{
+            .second{
+              z-index: 3;
+            }
+          }
           img {
             object-fit: cover;
             height: 100%;
             width: 100%;
             position: absolute;
+
+          }
+          .first{
+            z-index: 2;
           }
     }
   }

@@ -39,7 +39,8 @@ const Card = ({ rated }) => {
         </div>
       </div>
       <div className="card-img">
-        <img src={rated.img} alt="" />
+        <img src={rated.img} alt="" className="first"/>
+        <img src={rated.img2} alt="" className="second" />
       </div>
     </div>
   );
