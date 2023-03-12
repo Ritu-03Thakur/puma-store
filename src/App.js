@@ -4,6 +4,8 @@ import Footer from "./components/Footer/Footer";
 import Home from "./components/Home";
 import CartPage from "./components/CartPage/CartPage";
 import { Routes , Route, BrowserRouter } from "react-router-dom";
+import DelAddress from "./components/DelAddress/DelAddress";
+import Payment from "./components/Payment/Payment";
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
     <Routes>
       <Route  path = "/" element = {<Home/>} />
       <Route  path = "/cartPage" element = {<CartPage/>} />
+      <Route  path = "/delAddress" element = {<DelAddress/>} />
+      <Route  path = "/payment" element = {<Payment/>} />
     </Routes>
    
     <Footer/>

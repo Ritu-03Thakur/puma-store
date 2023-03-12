@@ -1,0 +1,39 @@
+
+.DelAddress{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    .heading-contact{
+        padding: 10px;
+       
+        align-items: center;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .contact-details{
+        .box{
+         display: flex;
+       flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      .address{
+         display: flex;
+       flex-direction: column;
+      gap: 20px;
+      .address-heading{
+        
+        display: flex;
+        gap: 10px;
+         align-items: center;
+      }
+      }
+        }
+    }
+}

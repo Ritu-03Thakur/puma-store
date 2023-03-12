@@ -57,7 +57,9 @@ const CartPage = () => {
         </div>
 
         <span>taxes and Shipping will calulate </span>
+        <Link to= "/delAddress">
         <Button className="info"  size="medium" variant="contained"  style={{backgroundColor : "#113f3a" }}  >check Out now</Button>
+        </Link>
        
        
      </div>
