@@ -57,7 +57,7 @@ const Topdata = [
       rating: 5,
       img: "./assert/shoe1b.jpeg",
       img2: "./assert/shoe1a.jpeg",
-      color : "red"
+      
     },
     {
       id: 2,
@@ -66,7 +66,8 @@ const Topdata = [
       price: 200,
       rating: 5,
       img: "./assert/shoe1b.jpeg",
-      color : "red"
+      img2: "./assert/shoe1a.jpeg",
+      
     },
     {
       id: 3,
@@ -75,7 +76,8 @@ const Topdata = [
       price: 200,
       rating: 5,
       img: "./assert/shoe1b.jpeg",
-      color : "red"
+      img2: "./assert/shoe1a.jpeg",
+     
     },
   ];
 

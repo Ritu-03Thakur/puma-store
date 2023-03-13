@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-
+  z-index: 1000;
   position: -webkit-sticky;
   position: sticky;
   padding: 20px;
@@ -59,7 +59,7 @@
       flex-direction: column;
       justify-content: space-between;
       box-shadow: 5px 8px 7px #a7a79b;
-      
+
       padding: 5px;
       border-radius: 6px;
       .popular-card {
@@ -100,14 +100,13 @@
           width: 300px;
           overflow: hidden;
           position: relative;
-          
+
           img {
             object-fit: cover;
             height: 100%;
             width: 100%;
             position: absolute;
           }
-         
         }
       }
     }
@@ -132,16 +131,21 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: 5px 8px 7px #a7a79b;
+      background-color: #a6afac;
+      box-shadow: 11px 6px 3px #a7a79b;
       padding: 5px;
       border-radius: 6px;
+      
+
       .card-content {
         display: flex;
         flex-direction: column;
+        color: #353838;
         gap: 10px;
         justify-content: center;
         align-items: center;
         padding: 5px;
+      
         .card-price {
           display: flex;
           gap: 20px;
@@ -152,7 +156,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 11px;
+            font-size: 18px;
+
+            gap: 2px;
           }
         }
         .card-buy {
@@ -162,31 +168,29 @@
           gap: 5px;
         }
       }
-
-    
     }
 
     .card-img {
-       height: 250px;
-          width: 300px;
-          overflow: hidden;
-          position: relative;
-          
-          &:hover{
-            .second{
-              z-index: 3;
-            }
-          }
-          img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            position: absolute;
+      height: 250px;
+      width: 300px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
 
-          }
-          .first{
-            z-index: 2;
-          }
+      &:hover {
+        .second {
+          z-index: 3;
+        }
+      }
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+      .first {
+        z-index: 2;
+      }
     }
   }
 }
