@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="img" >
-        <img src="./assert/logo.png" alt=""   />
+        <img src="./images/logo.png" alt=""   />
       </div>
       <div className="icons">
         

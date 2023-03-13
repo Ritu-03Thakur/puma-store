@@ -97,7 +97,9 @@
 
         .shoe-img {
           height: 250px;
+          
           width: 300px;
+         
           overflow: hidden;
           position: relative;
 
@@ -106,6 +108,12 @@
             height: 100%;
             width: 100%;
             position: absolute;
+          }
+          &:hover{
+            img{
+             transform: rotate(-20deg);
+             transition: 2s;
+            }
           }
         }
       }
@@ -171,6 +179,7 @@
     }
 
     .card-img {
+     
       height: 250px;
       width: 300px;
       overflow: hidden;
@@ -180,6 +189,7 @@
       &:hover {
         .second {
           z-index: 3;
+          transition: 2s;
         }
       }
       img {
@@ -204,9 +214,18 @@
   justify-content: center;
   align-items: center;
   gap: 25px;
+ 
+  .images{
 
-  img {
-    height: 350px;
-    width: 300px;
+    img {
+      height: 350px;
+      width: 300px;
+    }
+    &:hover{
+      img{
+       transform: rotate(-20deg);
+       transition: 2s;
+      }
+    }
   }
 }

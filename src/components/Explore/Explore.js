@@ -11,8 +11,9 @@ const Explore = (props) => {
    <Button className="info" size="small" variant="contained"  style={{backgroundColor : "#113f3a"  }}  >Explore More</Button>
    
    </a>
-
+    <div className="images">
     <img src= {props.img} alt="" />
+    </div>
     </div>
   )
 }

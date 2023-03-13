@@ -34,7 +34,7 @@ const Card = ({ rated }) => {
           </Button>
 
           <span>
-            <StarIcon sx={{ color: "#657a12" }} /> {rated.rating}
+            <StarIcon sx={{ color: "#a3bf37" }} /> {rated.rating}
           </span>
         </div>
         <div className="card-buy">

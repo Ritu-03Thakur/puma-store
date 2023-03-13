@@ -20,16 +20,16 @@ const Home = () => {
       choice = "PUMA AIR WITH LIMITLESS CHOICES"
       desc = "asfkjdasfkjd"
       link = "https://in.puma.com"
-      img="./assert/shoe1b.png"
+      img="./images/shoe1b.png"
       
       />
       <TopRated />
       < Explore 
-      head = "HIGHLIGHTS" 
+      head = "FEATURED" 
       choice = "PUMA AIR WITH LIMITLESS CHOICES"
       desc = "asfkjdasfkjd"
       link = "https://in.puma.com"
-      img="./assert/shoe1b.png"
+      img="./images/shoe1b.png"
       />
       
     </div>
