@@ -41,6 +41,39 @@
   }
 }
 
+// hero - section 
+ .home-section{
+  background: linear-gradient(#b7b7e7, #692f2fa1);
+  padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+  
+  
+   .fimg{
+    img{
+      height: 500px;
+      width: 520px;
+    }
+   }
+
+  .images{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    img{
+      height: 180px;
+      border: 3px solid #ab7063;
+      border-radius: 5px;
+      box-shadow: 1px 2px 3px #d3bbbb;
+      width: 200px;
+    }
+    
+  }
+ }
+
+
 // Sales
 .popularSales {
   display: flex;

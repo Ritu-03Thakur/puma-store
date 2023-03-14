@@ -3,6 +3,7 @@ import Navbar from './Navbar/Navbar'
 import PopularSales from './PopularSales/PopularSales';
 import TopRated from './TopRated/TopRated';
 import Explore from './Explore/Explore';
+import HomeSection from './HeroSection/HomeSection';
 
 import "./Home.scss" ; 
 
@@ -13,6 +14,7 @@ const Home = () => {
   return (
     <div className='home'>
       <Navbar   />
+      <HomeSection  />
       <PopularSales   />
       < Explore 
       
