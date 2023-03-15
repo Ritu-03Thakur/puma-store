@@ -7,8 +7,8 @@
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.45);
   border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.45);
   box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4.5px);
 
@@ -41,38 +41,57 @@
   }
 }
 
-// hero - section 
- .home-section{
-  background: linear-gradient(#b7b7e7, #692f2fa1);
+// hero - section
+.home-section {
+  background: linear-gradient(#d4d4e9, #d3aed9, #d3515152, #dbdb94);
   padding: 20px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 30px;
-  
-  
-   .fimg{
-    img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  .fimg {
+    img {
       height: 500px;
       width: 520px;
     }
-   }
+  }
 
-  .images{
+  .images {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    img{
+    img {
       height: 180px;
-      border: 3px solid #ab7063;
+      border: 2px solid #2d7661;
       border-radius: 5px;
-      box-shadow: 1px 2px 3px #d3bbbb;
+      box-shadow: 1px 2px 3px #2e835c;
       width: 200px;
     }
-    
   }
- }
+}
+/* media query*/
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+  .home-section {
+    flex-direction: column;
+    padding: 10px;
+    .fimg {
+      img {
+        height: 300px;
+        width: 320px;
+      }
+    }
 
+    .images {
+      flex-direction: row;
+      img {
+        height: 80px;
+        width: 100px;
+      }
+    }
+  }
+}
 
 // Sales
 .popularSales {
@@ -91,9 +110,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      background: #c5c5e5d6;
+      backdrop-filter: blur(4.5px);
       box-shadow: 5px 8px 7px #a7a79b;
-
-      padding: 5px;
       border-radius: 6px;
       .popular-card {
         display: flex;
@@ -130,9 +149,9 @@
 
         .shoe-img {
           height: 250px;
-          
+
           width: 300px;
-         
+
           overflow: hidden;
           position: relative;
 
@@ -142,11 +161,44 @@
             width: 100%;
             position: absolute;
           }
-          &:hover{
-            img{
-             transform: rotate(-20deg);
-             transition: 2s;
+          &:hover {
+            img {
+              transform: rotate(-20deg);
+              transition: 2s;
             }
+          }
+        }
+      }
+    }
+  }
+}
+// media Query
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+  .popularSales {
+    .popularSales-cards {
+      .sales {
+        .popular-card {
+          padding: 5px;
+          .popular-card-content {
+            padding-top: 5px;
+            gap: 10px;
+
+            .popular-price {
+              gap: 10px;
+              span {
+                gap: 3px;
+              }
+            }
+
+            .popular-buy {
+              gap: 5px;
+            }
+          }
+
+          .shoe-img {
+            height: 150px;
+            width: 100px;
           }
         }
       }
@@ -176,7 +228,6 @@
       box-shadow: 11px 6px 3px #a7a79b;
       padding: 5px;
       border-radius: 6px;
-      
 
       .card-content {
         display: flex;
@@ -186,7 +237,7 @@
         justify-content: center;
         align-items: center;
         padding: 5px;
-      
+
         .card-price {
           display: flex;
           gap: 20px;
@@ -212,7 +263,6 @@
     }
 
     .card-img {
-     
       height: 250px;
       width: 300px;
       overflow: hidden;
@@ -247,17 +297,16 @@
   justify-content: center;
   align-items: center;
   gap: 25px;
- 
-  .images{
 
+  .images {
     img {
       height: 350px;
       width: 300px;
     }
-    &:hover{
-      img{
-       transform: rotate(-20deg);
-       transition: 2s;
+    &:hover {
+      img {
+        transform: rotate(-20deg);
+        transition: 2s;
       }
     }
   }
