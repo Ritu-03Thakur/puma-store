@@ -7,7 +7,8 @@ const PopSales = [
       rating: 4.5,
       img: "./images/shoe1b.png",
       img2: "./images/shoe1b.png",
-      color : "red"
+      color : "red" , 
+      added : "false"
     },
     {
       id: 2,
@@ -15,8 +16,8 @@ const PopSales = [
       shoeType: "Walking Shoe",
       price: 200,
       rating: 4.5,
-      img: "./images/shoe1b.png",
-      img2: "./images/shoe1b.png",
+      img: "./images/shoe2b.png",
+      img2: "./images/shoe2b.png",
       color : "red"
     },
     {
@@ -25,8 +26,8 @@ const PopSales = [
       shoeType: "Walking Shoe",
       price: 200,
       rating: 4.5,
-      img: "./images/shoe1b.png",
-      img2: "./images/shoe1b.png",
+      img: "./images/shoe3b.png",
+      img2: "./images/shoe3b.png",
       color : "red"
     },
   ];

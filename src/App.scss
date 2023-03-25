@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-.app{
-  background: linear-gradient( #c8d5a3, #c7c996 , #d19d3ec7 , #ffebee);
-  
-}
-
 
 
 
@@ -17,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #cfac7f;
+  background-color: #113f3a;
   padding: 20px;
   gap: 20px;
   .footer-content {
@@ -31,23 +26,23 @@
       gap: 10px;
 
       h4 {
-        color: #505033;
+        color: #abab81;
       }
 
       .row li {
         list-style: none;
-        color: #5a5a3f;
+        color: #8d8d69;
         
       }
 
     }
   }
   .copyright {
-    font-size: 18px;
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #565a17;
+    color: #bcdbce;
   }
 }

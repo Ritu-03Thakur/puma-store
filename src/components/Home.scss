@@ -43,55 +43,31 @@
 
 // hero - section
 .home-section {
-  background: linear-gradient(#d4d4e9, #d3aed9, #d3515152, #dbdb94);
-  padding: 20px;
+ display: flex;
+ justify-content: center;
+ position: relative;
+ 
+.fimg{
+  
+  object-fit: cover;
+  img{
+    height: 90vh;
+    width: 90vw;
+  }
+}
+ button{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-
-  .fimg {
-    img {
-      height: 500px;
-      width: 520px;
-    }
-  }
-
-  .images {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    img {
-      height: 180px;
-      border: 2px solid #2d7661;
-      border-radius: 5px;
-      box-shadow: 1px 2px 3px #2e835c;
-      width: 200px;
-    }
-  }
+ align-items: last baseline;
+  position: absolute;
+  top: calc(90vh - 100px);
+ }
+ 
 }
 /* media query*/
-$breakpoint-tablet: 768px;
-@media (max-width: $breakpoint-tablet) {
-  .home-section {
-    flex-direction: column;
-    padding: 10px;
-    .fimg {
-      img {
-        height: 300px;
-        width: 320px;
-      }
-    }
-
-    .images {
-      flex-direction: row;
-      img {
-        height: 80px;
-        width: 100px;
-      }
-    }
-  }
-}
+// $breakpoint-tablet: 768px;
+// @media (max-width: $breakpoint-tablet) {
+  
+// }
 
 // Sales
 .popularSales {
@@ -160,6 +136,7 @@ $breakpoint-tablet: 768px;
             height: 100%;
             width: 100%;
             position: absolute;
+            filter: drop-shadow(7px 10px 14px #113f3a);
           }
           &:hover {
             img {
@@ -302,10 +279,12 @@ $breakpoint-tablet: 768px;
     img {
       height: 350px;
       width: 300px;
+      border-radius: 10px;
+      filter: drop-shadow(7px 10px 14px #113f3a);
     }
     &:hover {
       img {
-        transform: rotate(-20deg);
+        transform: rotate(+5deg);
         transition: 2s;
       }
     }

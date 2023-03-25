@@ -1,5 +1,5 @@
 import React from "react";
-import { PopSales } from "../Data/Data";
+import {PopSales} from "../Data/Data.js"
 import Sales from "../Sales/Sales";
 
 const PopularSales = () => {

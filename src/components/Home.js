@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div className='home'>
       <Navbar   />
-      <HomeSection  />
+       <HomeSection />
       <PopularSales   />
       < Explore 
       
@@ -22,7 +22,7 @@ const Home = () => {
       choice = "PUMA AIR WITH LIMITLESS CHOICES"
       desc = "asfkjdasfkjd"
       link = "https://in.puma.com"
-      img="./images/shoe1b.png"
+      img="./assert/Fshoe3.png"
       
       />
       <TopRated />
@@ -31,7 +31,7 @@ const Home = () => {
       choice = "PUMA AIR WITH LIMITLESS CHOICES"
       desc = "asfkjdasfkjd"
       link = "https://in.puma.com"
-      img="./images/shoe1b.png"
+      img="./assert/Fshoe3.png"
       />
       
     </div>
