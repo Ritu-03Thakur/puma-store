@@ -3,19 +3,22 @@ import LocalMallIcon from "@mui/icons-material/LocalMall";
 import StarIcon from "@mui/icons-material/Star";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
-//import CartSlice, { increment } from "../CartUtil/CartSlice";
- // import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
+import { setIncreaseItem } from "../CartUtil/CartSlice";
 
-const Sales = ({ item }) => {
-//  const dispatch = useDispatch()
- // console.log((CartSlice.increment()));
+
+const Sales = ({ item : {id , heading ,shoeType , img  , price , rating}}) => {
+ const dispatch = useDispatch() ; 
+ const handleClick = () => {
+  dispatch(setIncreaseItem({id , heading , shoeType , img}))
+ }
  
   return (
     <div className="sales" >
       <div className="popular-card">
         <div className="popular-card-content">
-          <h2>{item.heading} </h2>
-          <h4>{item.shoeType}</h4>
+          <h2>{heading} </h2>
+          <h4>{shoeType}</h4>
           <div className="popular-price">
             <Button
               className="info"
@@ -23,11 +26,11 @@ const Sales = ({ item }) => {
               variant="contained"
               style={{ backgroundColor: "#113f3a" }}
             >
-              ${item.price}
+              ${price}
             </Button>
 
             <span>
-              <StarIcon /> {item.rating}
+              <StarIcon /> {rating}
             </span>
           </div>
           <div className="popular-buy">
@@ -35,7 +38,7 @@ const Sales = ({ item }) => {
             <LocalMallIcon
               sx={{ color: "#113f3a" }}
               style={{ boxShadow: "2px 2px 7px rgb(22 82 76)" }}
-           
+              onClick = {handleClick}
             />
             <Link to="/cartPage" className="link">
               <Button
@@ -50,8 +53,7 @@ const Sales = ({ item }) => {
           </div>
         </div>
         <div className="shoe-img">
-          <img src={item.img} alt="" className="first" />
-          {/* <img src= {props.img2} alt="" className="second" /> */}
+          <img src={img} alt="" className="first" />
         </div>
       </div>
     </div>

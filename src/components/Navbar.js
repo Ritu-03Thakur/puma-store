@@ -4,11 +4,12 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import LocalMallIcon from "@mui/icons-material/LocalMall" ; 
 import { Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
+import {  selectTotalQTY } from '../CartUtil/CartSlice';
 
 
 const Navbar = () => {
- // const count = useSelector((state) => state.cart.value)
-  const count = 0
+  const totalQty = useSelector(selectTotalQTY)
+  
 
   return (
     <div className='navbar'>
@@ -24,7 +25,7 @@ const Navbar = () => {
        
      <LocalMallIcon   sx={{color: "#113f3a"}}/>
      
-     <span>{count}</span>
+     <span>{totalQty}</span>
      </div>
      </Link>
     
