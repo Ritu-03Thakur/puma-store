@@ -8,7 +8,7 @@ const Explore = (props) => {
       <h3>{props.choice}</h3>
    <p>{props.desc}</p>
    <a href={props.link}>
-   <Button className="info" size="small" variant="contained"  style={{backgroundColor : "#113f3a"  }}  >Explore More</Button>
+   <Button className="info" size="small" variant="contained"  style={{backgroundColor : "#113f3a"  , textDecoration : "none" }}  >Explore More</Button>
    
    </a>
     <div className="images">

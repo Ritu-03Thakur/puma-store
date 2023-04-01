@@ -1,9 +1,9 @@
 import React  from 'react'
-import Navbar from './Navbar/Navbar'
-import PopularSales from './PopularSales/PopularSales';
-import TopRated from './TopRated/TopRated';
-import Explore from './Explore/Explore';
-import HomeSection from './HeroSection/HomeSection';
+import Navbar from './Navbar'
+import PopularSales from './PopularSales';
+import TopRated from './TopRated';
+import Explore from './Explore';
+import HomeSection from './HomeSection';
 
 import "./Home.scss" ; 
 

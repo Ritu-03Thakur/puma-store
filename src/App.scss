@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
-
+.app{
+  overflow: hidden;
+  
+  .link{
+    text-decoration: none;
+  }
+}
 
 
 

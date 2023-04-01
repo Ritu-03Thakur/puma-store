@@ -50,7 +50,7 @@ const DelAddress = () => {
         </Box>
       </div>
 
-      <Link to= "/payment">
+      <Link to= "/payment" className="link">
         <Button className="info"  size="medium" variant="contained"  style={{backgroundColor : "#113f3a" }}  >Continue</Button>
         </Link>
     </div>

@@ -41,7 +41,7 @@ const Card = ({ rated }) => {
           <LocalMallIcon
             sx={{ boxShadow: "1px 1px 2px 1px", color: "#353838" }}
           />
-          <Link to="/cartPage">
+          <Link to="/cartPage" className="link">
             <Button
               className="info"
               size="small"

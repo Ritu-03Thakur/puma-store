@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../Card/Card";
-import {Topdata} from "../Data/Data" ; 
+import Card from "./Card";
+import {Topdata} from "./Data" ; 
 
 const TopRated = () => {
   

@@ -1,11 +1,11 @@
 import  "./App.scss";
 
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import CartPage from "./components/CartPage/CartPage";
 import { Routes , Route, BrowserRouter } from "react-router-dom";
 import DelAddress from "./components/DelAddress/DelAddress";
-import Payment from "./components/Payment/Payment";
+import Payment from "./components/Payment";
 
 
 function App() {
