@@ -4,9 +4,7 @@ import PopularSales from './PopularSales';
 import TopRated from './TopRated';
 import Explore from './Explore';
 import HomeSection from './HomeSection';
-
-import "./Home.scss" ; 
-
+import {Topdata , PopSales} from "./Data" ; 
 
 const Home = () => {
 
@@ -15,7 +13,7 @@ const Home = () => {
     <div className='home'>
       <Navbar   />
        <HomeSection />
-      <PopularSales   />
+      <PopularSales   PopSales = {PopSales}/>
       < Explore 
       
       head = "HIGHLIGHTS" 
@@ -25,7 +23,7 @@ const Home = () => {
       img="./assert/Fshoe3.png"
       
       />
-      <TopRated />
+      <TopRated Topdata = {Topdata}/>
       < Explore 
       head = "FEATURED" 
       choice = "PUMA AIR WITH LIMITLESS CHOICES"

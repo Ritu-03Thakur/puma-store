@@ -1,15 +1,14 @@
 import React from "react";
 import Card from "./Card";
-import {Topdata} from "./Data" ; 
 
-const TopRated = () => {
+const TopRated = (props) => {
   
   return (
     <div className="toprated">
       <h1>TOP RATED SALES</h1>
 
       <div className="toprated-cards">
-        {Topdata.map((rated) => (
+        {props.Topdata.map((rated) => (
           <Card rated={rated} key={rated.id} />
         ))}
       </div>

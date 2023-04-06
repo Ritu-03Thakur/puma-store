@@ -12,6 +12,305 @@
   }
 }
 
+.navbar {
+  display: flex;
+  z-index: 1000;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4.5px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  top: 0;
+
+  .img img {
+    height: 65px;
+    width: 65px;
+  }
+  .icons {
+    display: flex;
+    gap: 15px;
+
+    .cart {
+      display: flex;
+      position: relative;
+
+      span {
+        padding: 3px;
+        border-radius: 23px;
+        color: #413d10;
+        top: -9px;
+        left: 18px;
+
+        position: absolute;
+        z-index: 100;
+      }
+    }
+  }
+}
+
+// hero - section
+.home-section {
+ display: flex;
+ justify-content: center;
+ position: relative;
+ 
+.fimg{
+  
+  object-fit: cover;
+  img{
+    height: 550px ;
+    width: 1200px;
+    
+  }
+}
+ button{
+  display: flex;
+ align-items: last baseline;
+  position: absolute;
+  top: calc(90vh - 100px);
+ }
+ 
+}
+/* media query*/
+// $breakpoint-tablet: 768px;
+// @media (max-width: $breakpoint-tablet) {
+  
+// }
+
+// Sales
+.popularSales {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .popularSales-cards {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    .sales {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #c5c5e5d6;
+      backdrop-filter: blur(4.5px);
+      box-shadow: 5px 8px 7px #a7a79b;
+      border-radius: 6px;
+      .popular-card {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+
+        .popular-card-content {
+          padding-top: 25px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          .popular-price {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-content: center;
+
+            span {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 7px;
+            }
+          }
+
+          .popular-buy {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 11px;
+          }
+        }
+
+        .shoe-img {
+          height: 250px;
+
+          width: 300px;
+
+          overflow: hidden;
+          position: relative;
+
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            filter: drop-shadow(7px 10px 14px #113f3a);
+          }
+          &:hover {
+            img {
+              transform: rotate(-20deg);
+              transition: 2s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// media Query
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+  .popularSales {
+    .popularSales-cards {
+      .sales {
+        .popular-card {
+          padding: 11px;
+          .popular-card-content {
+            padding-top: 5px;
+            gap: 10px;
+
+            .popular-price {
+              gap: 10px;
+              span {
+                gap: 3px;
+              }
+            }
+
+            .popular-buy {
+              gap: 5px;
+            }
+          }
+
+          .shoe-img {
+            height: 155px;
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Top - Rated Sales
+
+.toprated {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .toprated-cards {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #a6afac;
+      box-shadow: 11px 6px 3px #a7a79b;
+      padding: 5px;
+      border-radius: 6px;
+
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        color: #353838;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+
+        .card-price {
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          align-content: center;
+
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+
+            gap: 2px;
+          }
+        }
+        .card-buy {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+    }
+
+    .card-img {
+      height: 250px;
+      width: 300px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+
+      &:hover {
+        .second {
+          z-index: 3;
+          transition: 2s;
+        }
+      }
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+      .first {
+        z-index: 2;
+      }
+    }
+  }
+}
+
+// Explore
+
+.explore {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  .images {
+    img {
+      height: 350px;
+      width: 300px;
+      border-radius: 10px;
+      filter: drop-shadow(7px 10px 14px #113f3a);
+    }
+    &:hover {
+      img {
+        transform: rotate(+5deg);
+        transition: 2s;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
 
 .footer {

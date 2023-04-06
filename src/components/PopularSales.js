@@ -1,8 +1,7 @@
 import React from "react";
-import {PopSales} from "./Data.js"
 import Sales from "./Sales";
 
-const PopularSales = () => {
+const PopularSales = (props) => {
   
 
   return (
@@ -10,7 +9,7 @@ const PopularSales = () => {
       <h1>POPULAR SALES</h1>
       
       <div className="popularSales-cards">
-        {PopSales.map((item) => (
+        {props.PopSales.map((item) => (
           <Sales item={item} key={item.id} />
         ))}
       </div>
