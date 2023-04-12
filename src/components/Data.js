@@ -1,34 +1,30 @@
 const PopSales = [
     {
-      id: 1,
+      id: "0p0x1",
       heading: "Puma",
       shoeType: "Walking Shoe",
       price: 200,
       rating: 4.5,
       img: "./images/shoe1b.png",
-      img2: "./images/shoe1b.png",
-      color : "red" , 
-      added : "false"
+     
     },
     {
-      id: 2,
+      id: "0p0x2",
       heading: "Puma",
       shoeType: "Walking Shoe",
       price: 200,
       rating: 4.5,
       img: "./images/shoe2b.png",
-      img2: "./images/shoe2b.png",
-      color : "red"
+     
     },
     {
-      id: 3,
+      id: "0p0x3",
       heading: "Puma",
       shoeType: "Walking Shoe",
       price: 200,
       rating: 4.5,
       img: "./images/shoe3b.png",
-      img2: "./images/shoe3b.png",
-      color : "red"
+     
     },
   ];
 
@@ -51,7 +47,7 @@ const PopSales = [
 
 const Topdata = [
     {
-      id: 1,
+      id:"0t0x1",
       heading: "Men Shoes",
       shoeType: "Black & White Running Shoes",
       price: 200.0,
@@ -61,7 +57,7 @@ const Topdata = [
       
     },
     {
-      id: 2,
+      id: "0t0x2",
       heading: "Men Shoes",
       shoeType: "Off White & Orange Running Shoes",
       price: 120.0,
@@ -71,7 +67,7 @@ const Topdata = [
       
     },
     {
-      id: 3,
+      id: "0t0x3",
       heading: "Women Shoes",
       shoeType: "Brown Running Shoes",
       price: 150.0,
@@ -81,7 +77,7 @@ const Topdata = [
      
     },
     {
-      id: 4,
+      id:"0t0x4",
       heading: "Women Shoes",
       shoeType: "Black Basketball Shoes",
       price: 100.0,
@@ -91,7 +87,7 @@ const Topdata = [
      
     },
     {
-      id: 5,
+      id: "0t0x5",
       heading: "Women Shoes",
       shoeType: "Blue Basketball Shoes",
       price: 78,
@@ -102,7 +98,7 @@ const Topdata = [
     },
    
     {
-      id: 6,
+      id: "0t0x6",
       heading: "Women Shoes",
       shoeType: "Purple Renno Premium Running",
       price: 148,

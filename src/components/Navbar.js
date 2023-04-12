@@ -8,8 +8,7 @@ import {  selectTotalQTY } from '../CartUtil/CartSlice';
 
 
 const Navbar = () => {
-  const totalQty = useSelector(selectTotalQTY)
-  
+  const totalQty = useSelector(selectTotalQTY);
 
   return (
     <div className='navbar'>

@@ -4,13 +4,15 @@ import StarIcon from "@mui/icons-material/Star";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { setIncreaseItem } from "../CartUtil/CartSlice";
+import { setAddItemCart } from "../CartUtil/CartSlice";
 
 
 const Sales = ({ item : {id , heading ,shoeType , img  , price , rating}}) => {
  const dispatch = useDispatch() ; 
+
  const handleClick = () => {
-  dispatch(setIncreaseItem({id , heading , shoeType , img}))
+  
+  dispatch(setAddItemCart({id , heading , shoeType , img , price }))
  }
  
   return (
