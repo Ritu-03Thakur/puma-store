@@ -33,7 +33,7 @@ const Footer = () => {
             <li>Promotions</li>
             <li>Find A Store</li>
             <li>Sign Up</li>
-            <li>Nike Journeral</li>
+            <li>Puma Store</li>
             <li>Send Us Feedback</li>
           </div>
         </div>

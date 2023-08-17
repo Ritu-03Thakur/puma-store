@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 const Explore = (props) => {
   return (
     <div className="explore">
-      <h2>{props.head}</h2>
+      <h2 className="explore-heading">{props.head}</h2>
       <h3>{props.choice}</h3>
       <p>{props.desc}</p>
       <a href={props.link} className="link">

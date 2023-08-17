@@ -17,8 +17,8 @@ const CartPage = () => {
   const totalAmount = useSelector(selectTotalAmount);
 
   useEffect(() => {
-    dispatch(setGetTotal());
-  }, [cartItems, dispatch]);
+   dispatch(setGetTotal());
+  }, [cartItems, dispatch ]);
 
   return (
     <div className="cart-page">

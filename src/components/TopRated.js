@@ -5,7 +5,7 @@ const TopRated = (props) => {
   
   return (
     <div className="toprated">
-      <h1>TOP RATED SALES</h1>
+      <h1 className="toprated-heading">TOP RATED SALES</h1>
 
       <div className="toprated-cards">
         {props.Topdata.map((rated) => (

@@ -11,12 +11,13 @@
     text-decoration: none;
   }
 }
+// NAVBAR 
 
 .navbar {
   display: flex;
   z-index: 1000;
-  position: -webkit-sticky;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   padding: 20px;
   justify-content: space-between;
   align-items: center;
@@ -24,10 +25,9 @@
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.45);
   box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.25);
+  
   backdrop-filter: blur(4.5px);
-
   border: 1px solid rgba(255, 255, 255, 0.25);
-  top: 0;
 
   .img img {
     height: 65px;
@@ -43,11 +43,11 @@
 
       span {
         padding: 3px;
-        border-radius: 23px;
-        color: #413d10;
-        top: -9px;
-        left: 18px;
-
+        border-radius: 6px;
+        color: #05290f;
+        top: -12px;
+        background-color: #858584;
+        left: 20px;
         position: absolute;
         z-index: 100;
       }
@@ -56,39 +56,49 @@
 }
 
 // hero - section
+
+
 .home-section {
  display: flex;
  justify-content: center;
- position: relative;
+ align-items: center;
  
-.fimg{
-  
-  object-fit: cover;
-  img{
-    height: 550px ;
-    width: 1200px;
-    
+ .section-item{
+  position: relative;
+
+  .video-item{
+    display: flex;
+      overflow: hidden; 
+
+
+    video{
+      object-fit: cover;
+      width: 100%;
+ border-radius: 4px;
+    }
   }
-}
- button{
-  display: flex;
- align-items: last baseline;
-  position: absolute;
-  top: calc(90vh - 100px);
  }
- 
+
 }
-/* media query*/
-// $breakpoint-tablet: 768px;
-// @media (max-width: $breakpoint-tablet) {
-  
-// }
+.info{
+  display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
 
 // Sales
 .popularSales {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 20px;
+
+  .popular-heading {
+   display: flex;
+   margin: auto;
+   color: #113f3a
+  }
   .popularSales-cards {
     padding: 20px;
     display: flex;
@@ -204,6 +214,12 @@ $breakpoint-tablet: 768px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 20px;
+  .toprated-heading{
+    display: flex;
+    margin: auto;
+    color: #113f3a
+  }
   .toprated-cards {
     padding: 20px;
     display: flex;
@@ -289,6 +305,23 @@ $breakpoint-tablet: 768px;
   justify-content: center;
   align-items: center;
   gap: 25px;
+  margin-top: 20px;
+
+  .explore-heading{
+    display: flex;
+    margin: auto;
+    color: #113f3a ; 
+    font-size: 28px;
+  }
+  h3{
+    font-size: 25px;
+    color: #0a221f
+  }
+  p{
+    padding: 3px;
+    font-size: 20px;
+    color: #113f3a
+  }
 
   .images {
     img {

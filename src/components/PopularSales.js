@@ -6,7 +6,7 @@ const PopularSales = (props) => {
 
   return (
     <div className="popularSales">
-      <h1>POPULAR SALES</h1>
+      <h1 className="popular-heading" >POPULAR SALES</h1>
       
       <div className="popularSales-cards">
         {props.PopSales.map((item) => (
