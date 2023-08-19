@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import CartPage from "./components/CartPage/CartPage";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import DelAddress from "./components/DelAddress/DelAddress";
+import DelAddress from "./components/DelAddress";
 import Payment from "./components/Payment";
 
 function App() {

@@ -1,75 +1,78 @@
 import React from "react";
 import Button from "@mui/material/Button";
+import { InputAdornment, TextField } from "@mui/material";
+import { Lock } from "@mui/icons-material";
+import CardPath from "./CardPath";
+import "./cartpage.scss"
 import { Link } from "react-router-dom";
-import {
-  KeyboardArrowDown,
-  CreditCardOutlined,
-  AccountBalanceOutlined,
-  CurrencyRupeeOutlined,
-  Wallet,
-  PaymentOutlined,
-  GppGood,
-} from "@mui/icons-material";
+import { useSelector } from "react-redux";
+import { selectTotalAmount } from "../CartUtil/CartSlice";
 
 const Payment = () => {
+  const totalAmount = useSelector(selectTotalAmount);
+
+  const handleSubmit = () =>{
+    alert(" Thankyou Continue Shopping !!" )
+  }
+
   return (
     <div className="payment">
+      <CardPath />
       <div className="payment-heading">
-        <h2>Select Payment Method</h2>
+        <h2> Payment </h2>
+      </div>
+      <div className="payment-container">
+        <TextField
+          id="outlined-multiline-flexible"
+          label="Name on card"
+          multiline
+          maxRows={4}
+        />
 
-        <span>
-          {" "}
-          <GppGood /> 100% SAFE PAYMENTS
-        </span>
-      </div>
-      <div className="pay-online">
-        <div className="pay-heading">
-          <span>PAY ONLINE</span>
-          <hr />
+        <TextField
+          id="outlined-multiline-flexible"
+          label="Card number"
+          multiline
+          maxRows={4}
+        />
+        <div className="payment-box">
+          <TextField
+            label="Expiry date"
+            id="outlined-start-adornment"
+            sx={{ m: 1, width: "25ch" }}
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">MM/YY</InputAdornment>
+              ),
+            }}
+          />
+          <TextField
+            id="outlined-multiline-flexible"
+            label="Security code"
+            multiline
+            maxRows={4}
+          />
         </div>
+        <TextField
+          id="outlined-multiline-flexible"
+          label="ZIP/Postal code"
+          multiline
+          maxRows={4}
+        />
+      </div>
 
-        <div className="online">
-          <PaymentOutlined />
-          <span>UPI (Google Pay/Phone Pay)</span>
-          <KeyboardArrowDown />
-        </div>
-        <div className="online">
-          <Wallet />
-          <span>Wallet</span>
-          <KeyboardArrowDown />
-        </div>
-        <div className="online">
-          <CreditCardOutlined />
-          <span>Debit/Credit Card</span>
-          <KeyboardArrowDown />
-        </div>
-        <div className="online">
-          <AccountBalanceOutlined />
-          <span>Net Banking</span>
-          <KeyboardArrowDown />
-        </div>
-      </div>
-      <div className="pay-cash">
-        <div className="pay-heading">
-          <span>PAY IN CASH</span>
-          <hr />
-        </div>
-        <div className="online">
-          <CurrencyRupeeOutlined />
-          <span>Cash on Delivery</span>
-          <KeyboardArrowDown />
-        </div>
-      </div>
-      <Link to="/payment">
+      <Link to={"/"}>
         <Button
-          className="info"
+          className="btn"
           size="medium"
           variant="contained"
           style={{ backgroundColor: "#113f3a" }}
+          onClick={handleSubmit}
         >
-          Continue
+        <Lock/>Pay <span>${totalAmount}.00</span>
         </Button>
       </Link>
+      
     </div>
   );
 };

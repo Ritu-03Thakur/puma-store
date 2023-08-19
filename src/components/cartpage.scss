@@ -13,7 +13,10 @@
        
         align-items: center;
         display: flex;
-        gap: 10px;
+        gap: 10px; 
+        h1{
+          color: #113f3a;
+        }
     }
     
     .contact-details{
@@ -36,4 +39,36 @@
       }
         }
     }
+}
+
+.payment{
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    .payment-heading{
+      display: flex;
+    margin: auto;
+    color: #113f3a;
+    }
+
+    .payment-container{
+      padding: 12px;
+      display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    .payment-box{
+      display: flex;
+      align-items: center;
+    }
+    }
+   .btn{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    margin-bottom: 5px;
+   }
 }

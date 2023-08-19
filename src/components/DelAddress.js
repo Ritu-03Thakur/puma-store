@@ -5,15 +5,17 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
-import "./DelAddress.scss" ; 
+import "./cartpage.scss" ; 
+import CardPath from "./CardPath";
 
 const DelAddress = () => {
   return (
     <div className="DelAddress">
+      <CardPath />
       <div className="heading-contact">
         <LocalPhoneOutlinedIcon sx={{fontSize : "35px"
         }}/>
-        <h1>Contact Details</h1>
+        <h1 >Contact Details</h1>
       </div>
 
       <div className="contact-details">

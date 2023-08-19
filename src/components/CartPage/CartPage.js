@@ -22,6 +22,7 @@ const CartPage = () => {
 
   return (
     <div className="cart-page">
+    
       <div className="cart-heading">
         <h1>Your Cart</h1>
         <Link to="/" className="link">
@@ -48,7 +49,7 @@ const CartPage = () => {
                 variant="contained"
                 style={{ backgroundColor: "#113f3a" }}
               >
-                {totalAmount}
+                ${totalAmount}.00
               </Button>
             </div>
 
